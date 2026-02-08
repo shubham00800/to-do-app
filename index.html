@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoViz – Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<main class="wrapper">
+  <section class="todo-card">
+
+
+    <header class="top">
+      <div class="profile">
+        <img src="shubh.jpeg" alt="Profile Image">
+        <div>
+          <h1>TodoViz</h1>
+          <small>Task Manager</small>
+        </div>
+      </div>
+      <button id="themeBtn">🌙</button>
+    </header>
+
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a task...">
+      <button id="addBtn">Add</button>
+    </div>
+
+  
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    
+    <div class="graph-box">
+      <h3>Task Progress</h3>
+      <canvas id="taskChart" width="300" height="180"></canvas>
+    </div>
+
+    <ul id="taskList"></ul>
+
+ 
+    <p id="count">0 tasks remaining</p>
+
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
